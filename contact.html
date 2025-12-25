@@ -43,30 +43,26 @@
     <h3>Send Us a Message</h3>
 
     <!-- SIMPLE CONTACT FORM (static for now) -->
-    <form>
-      <p>
-        <input type="text" placeholder="Your Name" style="width:100%; padding:10px;">
-      </p>
+    <form action="https://formspree.io/f/mojagaob" method="POST">
 
-      <p>
-        <input type="email" placeholder="Your Email" style="width:100%; padding:10px;">
-      </p>
+  <label>
+    Your Name:
+    <input type="text" name="name" required>
+  </label>
 
-      <p>
-        <textarea placeholder="Your Message" rows="5" style="width:100%; padding:10px;"></textarea>
-      </p>
+  <label>
+    Your Email:
+    <input type="email" name="email" required>
+  </label>
 
-      <p>
-        <button type="submit" style="padding:10px 20px;">
-          Send Message
-        </button>
-      </p>
-    </form>
+  <label>
+    Your Message:
+    <textarea name="message" required></textarea>
+  </label>
 
-    <p style="font-size:14px; color:#555;">
-      ⚠️ This form does not send messages yet.
-      A backend or form service will be added later.
-    </p>
+  <button type="submit">Send Message</button>
+
+</form>
 
   </section>
 </main>
