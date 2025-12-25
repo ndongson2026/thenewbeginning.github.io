@@ -158,3 +158,18 @@ body {
   background: transparent;
 }
 
+/* White content frame */
+.content section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  margin: 40px auto;
+  max-width: 850px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 768px) {
+  .content section {
+    margin: 25px 10px;
+    padding: 20px;
+  }
+}
