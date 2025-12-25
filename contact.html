@@ -31,39 +31,80 @@
 </header>
 
 <main class="content">
-  
-Copy code
-Html
-<section>
-  <h2>Contact Us</h2>
+  <section>
 
-  <div class="contact-list">
-    <div class="contact-item">
-      <strong>Phone:</strong>
-      <span>+237 677 441 880</span>
+    <h2>Contact Us</h2>
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-list">
+      <div class="contact-item">
+        <strong>Phone:</strong>
+        <span>+237 677 441 880</span>
+      </div>
+
+      <div class="contact-item">
+        <strong>Email:</strong>
+        <span>thenewbeginning@example.com</span>
+      </div>
+
+      <div class="contact-item">
+        <strong>WhatsApp:</strong>
+        <span>+237 677 441 880</span>
+      </div>
+
+      <div class="contact-item">
+        <strong>Location:</strong>
+        <span>Cameroon</span>
+      </div>
     </div>
 
-    <div class="contact-item">
-      <strong>Email:</strong>
-      <span>thenewbeginning@example.com</span>
-    </div>
+    <!-- CONTACT FORM -->
+    <h3 style="margin-top:30px;">Send Us a Message</h3>
 
-    <div class="contact-item">
-      <strong>WhatsApp:</strong>
-      <span>+237 677 441 880</span>
-    </div>
+    <form
+      action="https://formspree.io/f/mojagaob"
+      method="POST"
+    >
+      <div style="display:flex; flex-direction:column; gap:15px;">
 
-    <div class="contact-item">
-      <strong>Location:</strong>
-      <span>Cameroon</span>
-    </div>
-  </div>
-</section>
+        <label>
+          <strong>Your Email</strong><br>
+          <input
+            type="email"
+            name="email"
+            required
+            style="width:100%; padding:10px; margin-top:5px;"
+          >
+        </label>
+
+        <label>
+          <strong>Your Message</strong><br>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            style="width:100%; padding:10px; margin-top:5px;"
+          ></textarea>
+        </label>
+
+        <button
+          type="submit"
+          class="donate-btn"
+          style="align-self:flex-start;"
+        >
+          Send Message
+        </button>
+
+      </div>
+    </form>
+
+  </section>
 </main>
 
 <footer class="site-footer">
   <p>© 2025 The New Beginning. All rights reserved.</p>
 </footer>
+
 <!-- WhatsApp Floating Button -->
 <a
   href="https://wa.me/237677441880?text=Hello%20I%20would%20like%20to%20learn%20more%20about%20The%20New%20Beginning"
@@ -73,5 +114,6 @@ Html
 >
   💬
 </a>
+
 </body>
 </html>
