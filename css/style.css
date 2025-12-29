@@ -65,7 +65,42 @@ body {
 .site-nav a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+/* ===== MOBILE MENU (HAMBURGER) ===== */
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .site-nav.active {
+    display: flex;
+  }
+
+  .site-nav a {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px;
+    border-radius: 6px;
+  }
+}
 /* ===== SCROLLING SLOGAN ===== */
 .slogan-bar {
   width: 100%;
