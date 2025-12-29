@@ -153,5 +153,13 @@
   window.addEventListener("scroll", revealOnScroll);
   revealOnScroll(); // run once on page load
 </script>
+    <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".site-nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
