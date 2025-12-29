@@ -119,6 +119,26 @@
 <footer class="site-footer">  
   <p>© 2025 The New Beginning. All rights reserved.</p>  
 </footer>  
-  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+
+      // Only apply to internal links
+      if (href && !href.startsWith("http") && !href.startsWith("#")) {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.body.classList.add("fade-out");
+
+          setTimeout(() => {
+            window.location.href = href;
+          }, 400);
+        });
+      }
+    });
+  });
+</script>
 </body>  
 </html>  
