@@ -23,28 +23,7 @@ body {
   padding: 50px 20px 30px;
   animation: slideDown 1.1s ease-out forwards;
 }
-/* ===== STICKY HEADER ===== */
 
-.site-header {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-/* Sticky state */
-.site-header.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  padding: 20px 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Add spacing so content doesn't jump */
-body.has-sticky {
-  padding-top: 140px; /* adjust if header height changes */
-}
 /* ===== LOGO ===== */
 .site-logo {
   display: block;
