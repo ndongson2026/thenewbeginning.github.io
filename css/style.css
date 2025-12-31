@@ -30,6 +30,9 @@ body {
   max-width: 120px;
   height: auto;
   margin: 0 auto 15px;
+  padding: 12px;
+  background: #0b5ed7; /* same blue as header */
+  border-radius: 12px;
   animation: fadeIn 1.2s ease-in forwards;
 }
 
