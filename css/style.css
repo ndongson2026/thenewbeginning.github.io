@@ -234,10 +234,10 @@ p {
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
+  .site-logo {
+    max-width: 140px;  /* Bigger on mobile */
   }
-
+}
   .site-nav {
     display: none;
     flex-direction: column;
